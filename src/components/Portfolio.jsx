@@ -1,5 +1,6 @@
 import React from "react";
 import TextStroke from "./TextStroke";
+import img1 from "./../assets/portfolio_img_1-1.jpg";
 
 function Portfolio() {
   return (
@@ -20,7 +21,7 @@ function Portfolio() {
             <div className="relative">
               <img
                 className="img-size"
-                src="src\assets\portfolio_img_1-1.jpg"
+                src={`${img1}`}
                 alt=""
               />
               <div className="absolute top-[35%] flex justify-center items-center w-full">
@@ -31,7 +32,7 @@ function Portfolio() {
             <div>
               <img
                 className="img-size"
-                src="src\assets\portfolio_img_2-2.jpg"
+                src={`${img1}`}
                 alt=""
               />
               <p className="flex justify-center pt-4 text-xl">Image Project</p>
@@ -39,7 +40,7 @@ function Portfolio() {
             <div>
               <img
                 className="img-size"
-                src="src\assets\portfolio_img_3-1.jpg"
+                src={`${img1}`}
                 alt=""
               />
               <p className="flex justify-center pt-4 text-xl">Image Project</p>
@@ -49,7 +50,7 @@ function Portfolio() {
             <div>
               <img
                 className="img-size"
-                src="src\assets\portfolio_img_4-2.jpg"
+                src={`${img1}`}
                 alt=""
               />
               <p className="flex justify-center pt-4 text-xl">Image Project</p>
@@ -57,7 +58,7 @@ function Portfolio() {
             <div>
               <img
                 className="img-size"
-                src="src\assets\portfolio_img_5-1.jpg"
+                src={`${img1}`}
                 alt=""
               />
               <p className="flex justify-center pt-4 text-xl">Image Project</p>
@@ -65,7 +66,7 @@ function Portfolio() {
             <div>
               <img
                 className="img-size"
-                src="src\assets\portfolio_img_6-1.jpg"
+                src={`${img1}`}
                 alt=""
               />
               <p className="flex justify-center pt-4 text-xl">Image Project</p>
