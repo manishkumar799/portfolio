@@ -7,7 +7,7 @@ function Intro() {
       <div className="flex justify-center ">
         <img
           className="object-cover border-1 rounded-[50%] xl:rounded-none h-[250px] w-[250px] xl:h-[500px] xl:w-[420px]"
-          src={`${introImage}`}
+          src={introImage}
           alt=""
         />
       </div>

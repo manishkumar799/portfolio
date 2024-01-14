@@ -21,7 +21,7 @@ function Portfolio() {
             <div className="relative">
               <img
                 className="img-size"
-                src={`${img1}`}
+                src={img1}
                 alt=""
               />
               <div className="absolute top-[35%] flex justify-center items-center w-full">
@@ -32,7 +32,7 @@ function Portfolio() {
             <div>
               <img
                 className="img-size"
-                src={`${img1}`}
+                src={img1}
                 alt=""
               />
               <p className="flex justify-center pt-4 text-xl">Image Project</p>
@@ -40,7 +40,7 @@ function Portfolio() {
             <div>
               <img
                 className="img-size"
-                src={`${img1}`}
+                src={img1}
                 alt=""
               />
               <p className="flex justify-center pt-4 text-xl">Image Project</p>
@@ -50,7 +50,7 @@ function Portfolio() {
             <div>
               <img
                 className="img-size"
-                src={`${img1}`}
+                src={img1}
                 alt=""
               />
               <p className="flex justify-center pt-4 text-xl">Image Project</p>
@@ -58,7 +58,7 @@ function Portfolio() {
             <div>
               <img
                 className="img-size"
-                src={`${img1}`}
+                src={img1}
                 alt=""
               />
               <p className="flex justify-center pt-4 text-xl">Image Project</p>
@@ -66,7 +66,7 @@ function Portfolio() {
             <div>
               <img
                 className="img-size"
-                src={`${img1}`}
+                src={img1}
                 alt=""
               />
               <p className="flex justify-center pt-4 text-xl">Image Project</p>
