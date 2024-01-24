@@ -3,8 +3,46 @@ import TextStroke from "./TextStroke";
 import { MdPerson, MdCall } from "react-icons/md";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { SiMinutemailer } from "react-icons/si";
+import Swal from "sweetalert2";
+import axios from "axios";
 
 function Contact() {
+  const [email, setEmail] = React.useState();
+  const [message, setMessage] = React.useState();
+  const [subject, setSubject] = React.useState();
+  const [name, setName] = React.useState();
+
+  const handleClick = (e) => {
+    const data = {
+      email: email,
+      name: name,
+      subject: subject,
+      message: message,
+    };
+
+    sendDataRequest(data);
+  };
+
+  const sendDataRequest = (data) => {
+    axios
+      .post("https://sheetdb.io/api/v1/hu3tbfdoa4vpr", data)
+      .then((response) => {
+        if (response.data.created) {
+          Swal.fire({
+            icon: "success",
+            title: "Message Sent",
+            toast: true,
+            position: "top-end",
+            timer: 3000,
+            showConfirmButton: false,
+          });
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <div id="contact" className="">
       {" "}
@@ -20,6 +58,7 @@ function Contact() {
                 aria-describedby="helper-text-explanation"
                 className="text-md  block w-full p-2.5"
                 placeholder="Name"
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="sm:w-[50%]">
@@ -29,6 +68,7 @@ function Contact() {
                 aria-describedby="helper-text-explanation"
                 className="text-md block w-full p-2.5"
                 placeholder="Email"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
           </div>
@@ -39,6 +79,7 @@ function Contact() {
               aria-describedby="helper-text-explanation"
               className=" text-md   block w-full p-2.5"
               placeholder="Subject"
+              onChange={(e) => setSubject(e.target.value)}
             />
           </div>
           <div className="py-6">
@@ -47,10 +88,14 @@ function Contact() {
               rows="4"
               className="block p-2.5 w-full text-md "
               placeholder="Message"
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
           <div className="pt-6">
-            <button className="bg-[rgb(0,157,102)] hover:bg-[rgb(0,180,102)] text-white py-3 px-6">
+            <button
+              className="bg-[rgb(0,157,102)] hover:bg-[rgb(0,180,102)] text-white py-3 px-6"
+              onClick={handleClick}
+            >
               Send Message
             </button>
           </div>
@@ -58,7 +103,9 @@ function Contact() {
         <div className="sm:w-[40%] text-[#7c7c7c]">
           <h2 className="text-slate-50 text-xl">Contact Info</h2>
           <p className="py-5">
-          Open communication is the key to unlocking great opportunities. Feel free to contact me, and let's embark on a journey of innovation and collaboration.
+            Open communication is the key to unlocking great opportunities. Feel
+            free to contact me, and let's embark on a journey of innovation and
+            collaboration.
           </p>
           <div className="flex gap-8 pt-5">
             <div className="h-full flex flex-col">
