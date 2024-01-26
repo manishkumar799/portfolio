@@ -4,16 +4,16 @@ import react from "./../assets/react.svg"
 import mysql from "./../assets/icons8-mysql.svg";
 import node from "./../assets/icons8-node-js.svg";
 import mongo from "./../assets/icons8-mongodb.png";
-import express from "./../assets/express.svg";
+import express from "./../assets/Express.svg";
 import html from "./../assets/html-5-svgrepo-com.svg";
 import css from "./../assets/css-3-svgrepo-com.svg";
 import vscode from "./../assets/vs-code-svgrepo-com.svg";
 import postman from "./../assets/postman-icon-svgrepo-com.svg";
 import sequelize from "./../assets/sequelize-svgrepo-com.svg";
 import socketIo from "./../assets/socket-io-svgrepo-com.svg";
-import js from "./../assets/jest.svg";
-import tailwind from "./../assets/tailwind css.svg";
-import git from "./../assets/git.svg";
+import js from "./../assets/Jest.svg";
+import tailwind from "./../assets/Tailwind-CSS.svg";
+import git from "./../assets/Git.svg";
 
 function Skills() {
   return (
