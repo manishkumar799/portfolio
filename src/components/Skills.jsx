@@ -1,76 +1,110 @@
 import React from "react";
 import TextStroke from "./TextStroke";
+import react from "./../assets/react.svg"
+import mysql from "./../assets/icons8-mysql.svg";
+import node from "./../assets/icons8-node-js.svg";
+import mongo from "./../assets/icons8-mongodb.png";
+import express from "./../assets/express.svg";
+import html from "./../assets/html-5-svgrepo-com.svg";
+import css from "./../assets/css-3-svgrepo-com.svg";
+import vscode from "./../assets/vs-code-svgrepo-com.svg";
+import postman from "./../assets/postman-icon-svgrepo-com.svg";
+import sequelize from "./../assets/sequelize-svgrepo-com.svg";
+import socketIo from "./../assets/socket-io-svgrepo-com.svg";
+import js from "./../assets/jest.svg";
+import tailwind from "./../assets/tailwind css.svg";
+import git from "./../assets/git.svg";
 
 function Skills() {
   return (
     <>
-      <div className="relative sm:h-[500px] h-[600px]">
+      <div className="py-20">
         <TextStroke Title={"Skills"} TitleHeading={"My Skills"} />
-
-        <div className="flex w-full flex-col sm:flex-row justify-between sm:gap-10 px-2">
-          <div className="sm:w-[50%]">
-            <div className="py-4">
-              <div className="flex justify-between  text-[#9c9c9c] py-1">
-                <div>Node JS</div>
-                <div>90%</div>
-              </div>
-              <div className="h-2  bg-[#282828]">
-                <div className={`h-2 w-[90%] bg-[#009d66]`}></div>
-              </div>
-              {/* <ProgressBar heading={"Node JS"} percentage={"90%"} /> */}
+        <div className="flex gap-5 flex-wrap justify-center lg:px-[50px] xl:px-[100px] pt-5 px-0">
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={node} alt="" />
             </div>
-            <div className="py-4">
-              <div className="flex justify-between  text-[#9c9c9c] py-1">
-                <div>JavaScript</div>
-                <div>95%</div>
-              </div>
-              <div className="h-2  bg-[#282828]">
-                <div className={`h-2 w-[95%] bg-[#009d66]`}></div>
-              </div>
-              {/* <ProgressBar heading={"HTML/CSS"} percentage={"95%"} /> */}
-            </div>
-            <div className="py-4">
-              <div className="flex justify-between  text-[#9c9c9c] py-1">
-                <div>React JS</div>
-                <div>80%</div>
-              </div>
-              <div className="h-2  bg-[#282828]">
-                <div className={`h-2 w-[80%] bg-[#009d66]`}></div>
-              </div>
-              {/* <ProgressBar heading={"Javascript"} percentage={"80%"} /> */}
-            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
           </div>
-          <div className="sm:w-[50%]">
-            <div className="py-4">
-              <div className="flex justify-between  text-[#9c9c9c] py-1">
-                <div>MongoDB</div>
-                <div>80%</div>
-              </div>
-              <div className="h-2  bg-[#282828]">
-                <div className={`h-2 w-[80%] bg-[#009d66]`}></div>
-              </div>
-              {/* <ProgressBar heading={"React JS"} percentage={"80%"} /> */}
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              {/* <FaReact size={60} color="#149ECA" /> */}
+              <img className="h-16 w-16" src={express} alt="" />
             </div>
-            <div className="py-4">
-              <div className="flex justify-between  text-[#9c9c9c] py-1">
-                <div>MySQL</div>
-                <div>90%</div>
-              </div>
-              <div className="h-2  bg-[#282828]">
-                <div className={`h-2 w-[90%] bg-[#009d66]`}></div>
-              </div>
-              {/* <ProgressBar heading={"Python"} percentage={"90%"} /> */}
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={mysql} alt="" />
             </div>
-            <div className="py-4">
-              <div className="flex justify-between  text-[#9c9c9c] py-1">
-                <div>PHP</div>
-                <div>70%</div>
-              </div>
-              <div className="h-2  bg-[#282828]">
-                <div className={`h-2 w-[70%] bg-[#009d66]`}></div>
-              </div>
-              {/* <ProgressBar heading={"TypeScript"} percentage={"70%"} /> */}
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={mongo} alt="" />
             </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={react} alt="" />
+            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+            <img className="h-16 w-16" src={html} alt="" />
+            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={css} alt="" />
+            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={tailwind} alt="" />
+            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={git} alt="" />
+            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={vscode} alt="" />
+            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={postman} alt="" />
+            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={sequelize} alt="" />
+            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={socketIo} alt="" />
+            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
+          </div>
+          <div className="w-[100px] h-[120px] bg-[#1e1e1e]  flex flex-col  ">
+            <div className=" g-blue-400 w-full h-full flex justify-center items-center">
+              <img className="h-16 w-16" src={js} alt="" />
+            </div>
+            <div className=" g-red-600 w-full h-[20%] flex justify-center items-center border-2  border-t-[#3e3e3e] border-[#1e1e1e]"></div>
           </div>
         </div>
       </div>

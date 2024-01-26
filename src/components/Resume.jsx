@@ -102,38 +102,10 @@ function Resume() {
                 </p>
               </div>
               <hr />
-              {/* <hr />
-              <div className="resume-item ">
-                <span className="item-arrow"></span>
-                <h5 className="item-title"> Computer Science </h5>
-                <div className="item-details text-sm text-[#7C7C7C] py-3">
-                  
-                  Cambridge University / 2004 - 2007
-                </div>
-                <p className="item-description text-[#7C7C7C] text-sm leading-6">
-                  
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio quo repudiandae.
-                </p>
-              </div>
-              <hr />
-              <div className="resume-item ">
-                <span className="item-arrow"></span>
-                <h5 className="item-title"> Computer Science </h5>
-                <div className="item-details text-sm text-[#7C7C7C] py-3">
-                  
-                  Cambridge University / 2004 - 2007
-                </div>
-                <p className="item-description text-[#7C7C7C] text-sm leading-6">
-                  
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Optio quo repudiandae.
-                </p>
-              </div> */}
             </div>
           </div>
         </div>
-        <div className="py-10">
+        <div className="py10">
           <Skills />
           <Portfolio />
           <Contact />

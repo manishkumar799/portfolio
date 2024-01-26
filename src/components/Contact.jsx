@@ -138,7 +138,7 @@ function Contact() {
                 </div>
                 <div className="py-2">
                   <p className="text-slate-50">Email Me</p>
-                  <p className="break-all">manishkumar991msp@gmail.com</p>
+                  <p className="break-all">manish.kp.dev@gmail.com</p>
                 </div>
               </div>
             </div>

@@ -28,7 +28,7 @@ function Home() {
               </div>
             </div>
             <h2 className="text-2xl pt-3 sm:text-4xl">
-            Transforming Code into Digital Gold.
+              Transforming Code into Digital Gold.
             </h2>
             <button className="mt-4 w-[150px] bg-[rgb(0,157,102)] hover:bg-[rgb(0,180,102)] text-white py-3 px-6">
               Contact Me
@@ -48,13 +48,12 @@ function Home() {
             <div className="relative">
               <span className="text-xl font-[600]">Email</span>
               <div className="text-sm pt-2 text-slate-300">
-                manishkumar991msp@gmail.com
+                manish.kp.dev@gmail.com
               </div>
               <div className="absolute top-1 w-[2px] h-[50px] left-[-30px] bg-slate-100 sm:w-[1px]"></div>
             </div>
             <div className="flex justify-end ml-50%"></div>
           </div>
-
         </div>
       </div>
     </>

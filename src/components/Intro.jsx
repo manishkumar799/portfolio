@@ -51,7 +51,7 @@ function Intro() {
               Email:
               <span className="text-[#7C7C7C] pl-2">
                 {" "}
-                manishkumar991msp@gmail.com
+                manish.kp.dev@gmail.com
               </span>{" "}
             </p>
           </div>

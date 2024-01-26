@@ -15,9 +15,8 @@ function App() {
         <Intro />
         <Resume />
         <Social />
-
         <div className=" h-[100px] text-white flex justify-center items-center bg-black flex-end">
-          © Copyright. All Rights Reserved
+          © No Copyright. No Rights Reserved
         </div>
       </div>
     </>
