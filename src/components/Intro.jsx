@@ -1,12 +1,21 @@
 import React from "react";
 import introImage from "./../assets/W13.jpg";
+import resume from  "./../assets/Resume_Manish_Kumar_Pandit.pdf"
 
 function Intro() {
+  const downloadPDF = () => {
+    const pdfFilePath = "./../assets/Resume_Manish_Kumar_Pandit.pdf";
+    const link = document.createElement("a");
+
+    link.href = resume;
+    link.download = "Resume_Manish_Kumar_Pandit.pdf"; 
+    link.click();
+  };
   return (
     <div className="flex justify-start flex-col xl:flex-row  text-white  xl:px-48 px-6 md:px-10 lg:px-20 gap-10 pt-24">
       <div className="flex justify-center ">
         <img
-          className="object-cover border-1 rounded-[50%] xl:rounded-none h-[250px] w-[250px] xl:h-[500px] xl:w-[420px]"
+          className="object-cover border-1 rounded-[50%] xl:rounded-none h-[250px] w-[250px] xl:h-[500px] xl:w-[420px] custom-box-shadow"
           src={introImage}
           alt=""
         />
@@ -56,7 +65,7 @@ function Intro() {
             </p>
           </div>
         </div>
-        <button className="bg-[rgb(0,157,102)] hover:bg-[rgb(0,180,102)] text-white py-3 px-6">
+        <button onClick={downloadPDF} className="bg-[rgb(0,157,102)] hover:bg-[rgb(0,180,102)] text-white py-3 px-6">
           Download CV
         </button>
       </div>

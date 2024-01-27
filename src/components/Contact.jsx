@@ -44,7 +44,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="">
+    <div id="contact" className="pb-16">
       {" "}
       <TextStroke Title={"Contact"} TitleHeading={"Get in Touch"} />
       <div className="flex flex-col sm:flex-row gap-12 justify-center">

@@ -9,10 +9,10 @@ function Resume() {
     <>
       <div
         id="resume"
-        className="relative px-6 lg:px-20 pt-32 xl:px-44 md:px-10 "
+        className="relative px-6 lg:px-20 pt-10 md:pt-32 xl:px-44 md:px-10 "
       >
         <TextStroke Title={"Resume"} TitleHeading={"My Resume"} />
-        <div className="flex flex-col sm:flex-row justify-start text-white text-3xl sm:gap-8 xl:gap-14 pb-20 px-2">
+        <div className="flex flex-col sm:flex-row justify-start text-white text-3xl sm:gap-8 xl:gap-14 md:pb-20 px-2">
           <div className=" sm:w-[50%] relative">
             <div className="py-6">Education</div>
             <div className="bg-[#1e1e1e] border-2 border-l-[#009d66] border-[#1e1e1e]  text-lg ">
@@ -105,7 +105,7 @@ function Resume() {
             </div>
           </div>
         </div>
-        <div className="py10">
+        <div className="">
           <Skills />
           <Portfolio />
           <Contact />

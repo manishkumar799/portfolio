@@ -16,20 +16,30 @@ export default function Social() {
             Follow Me
           </div>
         </div>
+        <div className="pb-5">
+          <a href="https://www.linkedin.com/in/manishkumar799/">
+            <FaLinkedinIn href="" className="cursor-pointer" />
+          </a>
+        </div>
+        <div className="pb-5">
+          <a href="https://github.com/manishkumar799">
+            <FaGithub className="cursor-pointer" />
+          </a>
+        </div>
+        <div className="pb-5">
+          <a href="https://twitter.com/CipherdMan">
+            <RiTwitterXLine className="cursor-pointer" />
+          </a>
+        </div>
+        <div className="pb-5">
+          <a href="https://www.instagram.com/cipherdman/">
+            <FaInstagram className="cursor-pointer" />
+          </a>
+        </div>
         <div className="pb-5 ">
-          <FaFacebookF className="cursor-pointer " />
-        </div>
-        <div className="pb-5">
-          <RiTwitterXLine className="cursor-pointer" />
-        </div>
-        <div className="pb-5">
-          <FaInstagram className="cursor-pointer" />
-        </div>
-        <div className="pb-5">
-          <FaGithub className="cursor-pointer"/>
-        </div>
-        <div className="pb-5">
-          <FaLinkedinIn className="cursor-pointer"/>
+          <a href="https://www.facebook.com/cipherdman/">
+            <FaFacebookF className="cursor-pointer " />
+          </a>
         </div>
       </div>
     </>
