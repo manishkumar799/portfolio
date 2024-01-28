@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import menuItems from "./MenuItems";
 import { FaBars, FaTimes, FaConnectdevelop } from "react-icons/fa";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import logo from "./../assets/Manish-logos_white.png";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -27,10 +28,11 @@ const Navbar = () => {
     <>
       <div className={`navbar ${isSticky ? "navbar-scrolled" : ""} z-10`}>
         <div className="flex navbar-logo gap-2 ">
-          <FaConnectdevelop color="#009d66" size={"35px"} />
+          {/* <FaConnectdevelop color="#009d66" size={"35px"} /> */}
           <AnchorLink href="#home">
             <h1 className="text-3xl text-[#009d66]" href="home">
-              InnoMesh
+              {/* InnoMesh */}
+              <img className="absolute w-40 top-[-60px] left-[-20px]  md:w-48 md:left-10 md:pt-2" src={logo} alt="" />
             </h1>
           </AnchorLink>
         </div>

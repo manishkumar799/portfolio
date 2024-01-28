@@ -24,6 +24,19 @@ function Contact() {
   };
 
   const sendDataRequest = (data) => {
+    for (const key in data) {
+      if (data[key] == undefined) {
+        Swal.fire({
+          icon: "error",
+          title: "Please enter the details",
+          toast: true,
+          position: "top-end",
+          timer: 3000,
+          showConfirmButton: false,
+        });
+        return;
+      }
+    }
     axios
       .post("https://sheetdb.io/api/v1/hu3tbfdoa4vpr", data)
       .then((response) => {
@@ -31,6 +44,15 @@ function Contact() {
           Swal.fire({
             icon: "success",
             title: "Message Sent",
+            toast: true,
+            position: "top-end",
+            timer: 3000,
+            showConfirmButton: false,
+          });
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Something went wrong",
             toast: true,
             position: "top-end",
             timer: 3000,
@@ -134,7 +156,7 @@ function Contact() {
                 </div>
                 <div className="py-2">
                   <p className="text-slate-50">Call Me</p>
-                  <p>+91944133009</p>
+                  <p>+919477133009</p>
                 </div>
                 <div className="py-2">
                   <p className="text-slate-50">Email Me</p>

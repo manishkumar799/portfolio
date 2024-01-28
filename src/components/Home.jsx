@@ -30,9 +30,11 @@ function Home() {
             <h2 className="text-2xl pt-3 sm:text-4xl">
               Transforming Code into Digital Gold.
             </h2>
-            <button className="mt-4 w-[150px] bg-[rgb(0,157,102)] hover:bg-[rgb(0,180,102)] text-white py-3 px-6">
-              Contact Me
-            </button>
+            <a href="mailto:manish.kp.dev@gmail.com">
+              <button className="mt-4 w-[150px] bg-[rgb(0,157,102)] hover:bg-[rgb(0,180,102)] text-white py-3 px-6">
+                Contact Me
+              </button>
+            </a>
           </div>
           <div className="flex text-white gap-7 pt-8 flex-col pl-10 absolute sm:flex-row  sm:bottom-[50px] sm:gap-24 bottom-[10px]">
             <div className="relative ">
