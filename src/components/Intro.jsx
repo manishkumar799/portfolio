@@ -1,5 +1,5 @@
 import React from "react";
-import introImage from "./../assets/W13.jpg";
+import introImage from "./../assets/image2.jpg";
 import resume from  "./../assets/Resume_Manish_Kumar_Pandit.pdf"
 
 function Intro() {
