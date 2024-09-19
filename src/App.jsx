@@ -1,10 +1,10 @@
 import "./App.css";
 import "./index.css";
-import Home from "./components/Home";
-import Intro from "./components/Intro";
-import Resume from "./components/Resume";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+import Home from "./pages/Home";
+import Intro from "./sections/Intro";
+import Resume from "./sections/Resume";
+import Portfolio from "./sections/Portfolio";
+import Contact from "./sections/Contact";
 import Social from "./components/Social";
 import { RiTwitterXLine } from "react-icons/ri";
 import {

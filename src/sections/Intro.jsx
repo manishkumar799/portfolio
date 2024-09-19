@@ -1,13 +1,12 @@
 import React from "react";
 import introImage from "./../assets/image2.jpg";
-import resume from  "./../assets/Resume_Manish_Kumar_Pandit.pdf"
 
 function Intro() {
   const downloadPDF = () => {
     const pdfFilePath = "./../assets/Resume_Manish_Kumar_Pandit.pdf";
     const link = document.createElement("a");
 
-    link.href = resume;
+    link.href = pdfFilePath;
     link.download = "Resume_Manish_Kumar_Pandit.pdf"; 
     link.click();
   };

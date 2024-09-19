@@ -1,6 +1,6 @@
 import React from "react";
 import Skills from "./Skills";
-import TextStroke from "./TextStroke";
+import TextStroke from "../components/TextStroke";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 

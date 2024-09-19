@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 import App from './App.jsx'
 import './index.css'
-import ErrorPage from "./components/ErrorPage";
-import Project from "./components/Projects";
+import ErrorPage from "./pages/ErrorPage.jsx";
+import Project from "./pages/Projects.jsx";
 
 const router = createBrowserRouter([
   {

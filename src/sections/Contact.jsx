@@ -1,5 +1,5 @@
 import React from "react";
-import TextStroke from "./TextStroke";
+import TextStroke from "../components/TextStroke";
 import { MdPerson, MdCall } from "react-icons/md";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { SiMinutemailer } from "react-icons/si";
