@@ -4,7 +4,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import img1 from "./../assets/projects/portfolio_img_1-1.jpg";
 import Dialog from "../components/Dialog";
-
 const PortfolioItem = ({ imgSrc, projectContent, name, openDialog }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -15,7 +14,7 @@ const PortfolioItem = ({ imgSrc, projectContent, name, openDialog }) => {
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => openDialog(projectContent)}
     >
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-4">
         <img
           className={`img-size custom-box-shadow ${isHovered ? "hovered" : ""}`}
           src={imgSrc}
@@ -97,13 +96,21 @@ function Portfolio() {
     <>
       <div id="portfolio" className="text-white py-10 md:py-20">
         <TextStroke Title={"Projects"} TitleHeading={"My Projects"} />
-        <div className="flex justify-center items-center gap-8 mb-4">
-          <p className="border-2 border-[var(--bg2)] bg-[var(--button)] w-[100px] justify-center items-center flex">All</p>
-          <p className="border-2 border-[var(--bg2)] bg-[var(--bg1)] w-[100px] justify-center items-center flex">Backend</p>
-          <p className="border-2 border-[var(--bg2)] bg-[var(--bg1)] w-[100px] justify-center items-center flex">Full Stack</p>
-          <p className="border-2 border-[var(--bg2)] bg-[var(--bg1)] w-[100px] justify-center items-center flex">Frontend</p>
+        <div className="flex justify-center items-center flex-wrap gap-4 mb-8">
+          <p className="border border-[rgb(0,157,102)] bg-[rgb(0,157,102)] text-white py-1 px-2 w-[120px] flex justify-center items-center">
+            All
+          </p>
+          <p className="border border-[rgb(0,157,102)] hover:bg-[rgb(0,157,102)] text-white py-1 px-2 w-[120px] flex justify-center items-center">
+            Backend
+          </p>
+          <p className="border border-[rgb(0,157,102)] hover:bg-[rgb(0,157,102)] text-white py-1 px-2 w-[120px] flex justify-center items-center">
+            Full Stack
+          </p>
+          <p className="border border-[rgb(0,157,102)] hover:bg-[rgb(0,157,102)] text-white py-1 px-2 w-[120px] flex justify-center items-center">
+            Frontend
+          </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 ">
+        <div className="grid grid-cols-2 sm:grid-cols-3">
           {projects.map((project, i) => (
             <PortfolioItem
               key={i}
