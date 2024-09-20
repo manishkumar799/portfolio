@@ -1,4 +1,5 @@
 import React from "react";
+import socialLink from "./../config/socialLink.json";
 import { RiTwitterXLine } from "react-icons/ri";
 import {
   FaFacebookF,
@@ -17,27 +18,27 @@ export default function Social() {
           </div>
         </div>
         <div className="pb-5">
-          <a href="https://www.linkedin.com/in/manishkumar799/">
+          <a href={socialLink.linkdin}>
             <FaLinkedinIn href="" className="cursor-pointer" />
           </a>
         </div>
         <div className="pb-5">
-          <a href="https://github.com/manishkumar799">
+          <a href={socialLink.github}>
             <FaGithub className="cursor-pointer" />
           </a>
         </div>
         <div className="pb-5">
-          <a href="https://twitter.com/CipherdMan">
+          <a href={socialLink.x}>
             <RiTwitterXLine className="cursor-pointer" />
           </a>
         </div>
         <div className="pb-5">
-          <a href="https://www.instagram.com/cipherdman/">
+          <a href={socialLink.instagram}>
             <FaInstagram className="cursor-pointer" />
           </a>
         </div>
         <div className="pb-5 ">
-          <a href="https://www.facebook.com/cipherdman/">
+          <a href={socialLink.facebook}>
             <FaFacebookF className="cursor-pointer " />
           </a>
         </div>

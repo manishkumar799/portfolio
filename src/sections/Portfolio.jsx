@@ -15,11 +15,13 @@ const PortfolioItem = ({ imgSrc, projectContent, name, openDialog }) => {
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => openDialog(projectContent)}
     >
-      <img
-        className={`img-size custom-box-shadow ${isHovered ? "hovered" : ""}`}
-        src={imgSrc}
-        alt=""
-      />
+      <div className="flex justify-center">
+        <img
+          className={`img-size custom-box-shadow ${isHovered ? "hovered" : ""}`}
+          src={imgSrc}
+          alt=""
+        />
+      </div>
       <p className="mt-3 flex justify-center items-center">{name}</p>
     </div>
   );
@@ -91,33 +93,26 @@ function Portfolio() {
   };
 
   const closeDialog = () => setDialogOpen(false);
-
-  const projectGroups = [
-    projects.slice(0, 3), // First 3 projects
-    projects.slice(3, 6), // Next 3 projects
-  ];
   return (
     <>
       <div id="portfolio" className="text-white py-10 md:py-20">
         <TextStroke Title={"Projects"} TitleHeading={"My Projects"} />
-
-        <div className="flex justify-center gap-4 sm:flex-col flex-row px-20">
-          {projectGroups.map((group, index) => (
-            <div
-              key={index}
-              className="flex gap-10 flex-col items-center sm:flex-row sm:pb-4"
-            >
-              {group.map((project, i) => (
-                <PortfolioItem
-                  key={i}
-                  imgSrc={project.imgSrc}
-                  projectContent={project}
-                  name={project.title}
-                  // name={`project ${i + 1 + index * 3}`}
-                  openDialog={openDialog}
-                />
-              ))}
-            </div>
+        <div className="flex justify-center items-center gap-8 mb-4">
+          <p className="border-2 border-[var(--bg2)] bg-[var(--button)] w-[100px] justify-center items-center flex">All</p>
+          <p className="border-2 border-[var(--bg2)] bg-[var(--bg1)] w-[100px] justify-center items-center flex">Backend</p>
+          <p className="border-2 border-[var(--bg2)] bg-[var(--bg1)] w-[100px] justify-center items-center flex">Full Stack</p>
+          <p className="border-2 border-[var(--bg2)] bg-[var(--bg1)] w-[100px] justify-center items-center flex">Frontend</p>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 ">
+          {projects.map((project, i) => (
+            <PortfolioItem
+              key={i}
+              imgSrc={project.imgSrc}
+              projectContent={project}
+              name={project.title}
+              // name={`project ${i + 1 + index * 3}`}
+              openDialog={openDialog}
+            />
           ))}
         </div>
 
@@ -139,8 +134,7 @@ function Portfolio() {
         title={dialogContent.title}
         description={dialogContent.description}
         technologies={dialogContent.technologies}
-      >
-      </Dialog>
+      ></Dialog>
     </>
   );
 }

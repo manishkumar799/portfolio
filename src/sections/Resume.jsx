@@ -1,16 +1,10 @@
 import React from "react";
-import Skills from "./Skills";
 import TextStroke from "../components/TextStroke";
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
 
 function Resume() {
   return (
     <>
-      <div
-        id="resume"
-        className="relative px-6 lg:px-20 pt-10 md:pt-32 xl:px-44 md:px-10 "
-      >
+      <div id="resume" className="s ">
         <TextStroke Title={"Resume"} TitleHeading={"My Resume"} />
         <div className="flex flex-col sm:flex-row justify-start text-white text-3xl sm:gap-8 xl:gap-14 md:pb-20 px-2">
           <div className=" sm:w-[50%] relative">
@@ -105,11 +99,7 @@ function Resume() {
             </div>
           </div>
         </div>
-        <div className="">
-          <Skills />
-          <Portfolio />
-          <Contact />
-        </div>
+
       </div>
     </>
   );
