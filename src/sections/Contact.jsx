@@ -66,8 +66,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="pb-16">
-      {" "}
+    <div id="contact" className="pb-16 mt-8">
       <TextStroke Title={"Contact"} TitleHeading={"Get in Touch"} />
       <div className="flex flex-col sm:flex-row gap-12 justify-center">
         <div className="sm:w-[60%]">

@@ -94,7 +94,7 @@ function Portfolio() {
   const closeDialog = () => setDialogOpen(false);
   return (
     <>
-      <div id="portfolio" className="text-white py-10 md:py-20">
+      <div id="portfolio" className="text-white py-10 md:py-16">
         <TextStroke Title={"Projects"} TitleHeading={"My Projects"} />
         <div className="flex justify-center items-center flex-wrap gap-4 mb-8">
           <p className="border border-[rgb(0,157,102)] bg-[rgb(0,157,102)] text-white py-1 px-2 w-[120px] flex justify-center items-center">

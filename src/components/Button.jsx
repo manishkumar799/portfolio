@@ -4,7 +4,7 @@ import "./Button.css";
 const Button = () => {
   return (
     <>
-      <button className="bg-[rgb(0,157,102)] hover:bg-[rgb(0,180,102)] text-white py-3 px-6">
+      <button className="bg-[rgb(0,157,102)] hover:bg-[rgb(0,180,102)] text-white py-3 px-6 custom-box-shadow">
         Contact Me
       </button>
     </>
