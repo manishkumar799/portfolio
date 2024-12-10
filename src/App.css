@@ -39,7 +39,6 @@ body {
   overflow-x: hidden;
 }
 .resume-container {
-  /* background-image: url("./assets/header-bg-dark.jpg"); */
   background-size: cover;
   height: 100vh;
   position: relative;

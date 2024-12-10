@@ -9,7 +9,7 @@ const PortfolioItem = ({ imgSrc, projectContent, name, openDialog }) => {
 
   return (
     <div
-      className="relativde"
+      className=""
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => openDialog(projectContent)}
@@ -94,6 +94,15 @@ function Portfolio() {
   const closeDialog = () => setDialogOpen(false);
   return (
     <>
+    <div className="relative">
+
+      <Dialog
+        isOpen={isDialogOpen}
+        onClose={closeDialog}
+        title={dialogContent.title}
+        description={dialogContent.description}
+        technologies={dialogContent.technologies}
+      ></Dialog>
       <div id="portfolio" className="text-white py-10 md:py-16">
         <TextStroke Title={"Projects"} TitleHeading={"My Projects"} />
         <div className="flex justify-center items-center flex-wrap gap-4 mb-8">
@@ -134,14 +143,7 @@ function Portfolio() {
           </Link>
         </div>
       </div>
-
-      <Dialog
-        isOpen={isDialogOpen}
-        onClose={closeDialog}
-        title={dialogContent.title}
-        description={dialogContent.description}
-        technologies={dialogContent.technologies}
-      ></Dialog>
+    </div>
     </>
   );
 }
