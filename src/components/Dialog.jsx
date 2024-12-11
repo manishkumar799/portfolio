@@ -31,19 +31,19 @@ const Dialog = ({
           ></div>
 
           {/* Dialog */}
-          <div className="relative p-6 w-11/12 lg:w-2/3 bg-gray-900 rounded-lg shadow-lg">
+          <div className="relative p-6 w-11/12 lg:w-2/3 bg-black rounded-lg shadow-lg">
             {/* Header */}
             <div className="flex justify-end">
               <button
                 onClick={onClose}
-                className="text-gray-500 hover:text-gray-300 text-2xl"
+                className="text-white hover:text-gray-300 text-2xl"
               >
                 ✖
               </button>
             </div>
 
             {/* Content */}
-            <div className="my-4 flex-grow overflow-auto flex lg:flex-row flex-col gap-4">
+            <div className="my-4 flex-grow overflow-auto flex lg:flex-row flex-col gap-4 text-white">
               <img
                 className="lg:h-[90%] max-w-full"
                 src="https://lionsgate.brightspotcdn.com/1d/90/8fc75de5411e985f3a2def98358d/johnwick4-section-promo-double-home-03.jpg"
