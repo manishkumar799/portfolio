@@ -25,6 +25,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--bg2); 
 }
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 body {
   background-color: #121212;
   font-family: Poppins, sans-serif;
