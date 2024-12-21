@@ -19,7 +19,7 @@ const projects =  [
     },
     {
       imgSrc: img1,
-      title: "Be kinder you",
+      title: "Return Ranger",
       description:
         "An internal admin panel to manage returns and orders across multiple platforms, integrated with Shopify and UPS APIs for tracking and label generation.",
       technologies: ["React", "Redux", "Tailwind CSS", "UPS API"],

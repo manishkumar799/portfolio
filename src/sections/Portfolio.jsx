@@ -22,7 +22,7 @@ const PortfolioItem = ({ imgSrc, projectContent, name, openDialog }) => {
           alt=""
         />
       </div>
-      <p className="mt-3 flex justify-center items-center">{name}</p>
+      <p className="mt-3 flex justify-center items-center text-center">{name}</p>
     </div>
   );
 };

@@ -52,7 +52,7 @@ const Dialog = ({
             </div>
 
             {/* Content */}
-            <div className="my-4 flex-grow overflow-auto flex lg:flex-row flex-col gap-4 text-white">
+            <div className="my-4 flex-grow overflow-auto flex md:flex-row flex-col gap-4 text-white">
               {/* <img
                 className="lg:h-[90%] max-w-full"
                 src="https://lionsgate.brightspotcdn.com/1d/90/8fc75de5411e985f3a2def98358d/johnwick4-section-promo-double-home-03.jpg"
