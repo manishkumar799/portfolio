@@ -355,31 +355,32 @@ textarea:focus {
 }
 
 .img-size {
-  height: 150px;
-  width:150px;
+  height: 200px;
+  width:300px;
+  border: 2px solid #009d66;
 }
 
-@media (min-width: 765px) {
-  .img-size {
-    height: 300px;
-    width: 300px;
-  }
-}
-@media (min-width: 680px) {
-  .img-size {
-    height: 250px;
-    width: 250px;
-  }
-}
 @media (min-width: 540px) {
   .img-size {
-    height: 190px;
-    width: 190px;
+    height: 220px;
+    width: 366px;
+  }
+}
+@media (min-width: 640px) {
+  .img-size {
+    height: 200px;
+    width: 280px;
+  }
+}
+@media (min-width: 765px) {
+  .img-size {
+    height: 220px;
+    width: 340px;
   }
 }
 @media (min-width: 1280px) {
   .img-size {
-    height: 360px;
+    height: 240px;
     width: 360px !important;
   }
 }

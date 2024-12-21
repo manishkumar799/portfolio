@@ -58,7 +58,7 @@ function Portfolio() {
       ></Dialog>
       <div id="portfolio" className="text-white py-10 md:py-16">
         <TextStroke Title={"Projects"} TitleHeading={"My Projects"} />
-        <div className="flex justify-center items-center flex-wrap gap-4 mb-8">
+        {/* <div className="flex justify-center items-center flex-wrap gap-4 mb-8">
           <p className="border border-[rgb(0,157,102)] bg-[rgb(0,157,102)] text-white py-1 px-2 w-[120px] flex justify-center items-center">
             All
           </p>
@@ -71,8 +71,8 @@ function Portfolio() {
           <p className="border border-[rgb(0,157,102)] hover:bg-[rgb(0,157,102)] text-white py-1 px-2 w-[120px] flex justify-center items-center">
             Frontend
           </p>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3">
+        </div> */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, i) => (
             <PortfolioItem
               key={i}
@@ -86,7 +86,7 @@ function Portfolio() {
           ))}
         </div>
 
-        <div className="flex justify-center items-center pt-8">
+        {/* <div className="flex justify-center items-center pt-8">
           <Link to="/portfolio/projects">
             <button className="border-2 border-[rgb(0,157,102)] hover:bg-[rgb(0,157,102)] text-white py-2 px-6">
               <div className="flex justify-center items-center gap-3">
@@ -95,7 +95,7 @@ function Portfolio() {
               </div>
             </button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
     </>

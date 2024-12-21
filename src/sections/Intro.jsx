@@ -14,7 +14,7 @@ function Intro() {
     <div className="flex justify-start flex-col xl:flex-row  text-white  xl:px-48 px-6 md:px-10 lg:px-20 gap-10 pt-24">
       <div className="flex justify-center ">
         <img
-          className="object-cover border-1 rounded-[50%] xl:rounded-none h-[250px] w-[250px] xl:h-[500px] xl:w-[420px] custom-box-shadow"
+          className="object-cover border- border-[rgb(0,157,102)] rounded-[50%] xl:rounded-none h-[250px] w-[250px] xl:h-[500px] xl:w-[420px] custom-box-shadow"
           src={introImage}
           alt=""
         />

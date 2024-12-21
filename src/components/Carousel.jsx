@@ -4,6 +4,7 @@ const Carousel = ({ images }) => {
   const carouselRef = useRef(null);
 
   const scrollTo = (direction) => {
+    console.log(carouselRef)
     if (carouselRef.current) {
       const { scrollLeft, clientWidth } = carouselRef.current;
       const scrollAmount = direction === "next" ? clientWidth : -clientWidth;
@@ -15,7 +16,7 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div className="relative flex items-center w-full max-w-3xl mx-auto overflow-hidden">
+    <div className="relative flex items-center w-full sm:min-w-[400px] min-w-[240px] max-w-3xl mx-auto overflow-hidden">
       {/* Horizontal Scrolling Container */}
       <div
         ref={carouselRef}
@@ -39,7 +40,7 @@ const Carousel = ({ images }) => {
       {/* Left Arrow */}
       <button
         onClick={() => scrollTo("prev")}
-        className="absolute top-1/2 -translate-y-1/2 left-4  text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none"
+        className="absolute top-1/2 -translate-y-1/2 left-4 bg-gray-300 text-black p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none"
       >
         &#8249;
       </button>
@@ -47,7 +48,7 @@ const Carousel = ({ images }) => {
       {/* Right Arrow */}
       <button
         onClick={() => scrollTo("next")}
-        className="absolute top-1/2 -translate-y-1/2 right-4  text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none"
+        className="absolute top-1/2 -translate-y-1/2 right-4 bg-gray-300 text-black p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none"
       >
         &#8250;
       </button>
