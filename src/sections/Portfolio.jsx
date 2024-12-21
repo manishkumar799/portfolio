@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import Dialog from "../components/Dialog";
 import projects from "../config/portfolio";
-const PortfolioItem = ({ imgSrc, projectContent, name, openDialog }) => {
+const PortfolioItem = ({ imgSrc, projectContent, name, openDialog,images }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -17,7 +17,7 @@ const PortfolioItem = ({ imgSrc, projectContent, name, openDialog }) => {
     >
       <div className="flex justify-center mt-4">
         <img
-          className={`img-size custom-box-shadow ${isHovered ? "hovered" : ""}`}
+          className={`img-size !object-cover custom-box-shadow ${isHovered ? "hovered" : ""}`}
           src={imgSrc}
           alt=""
         />
@@ -37,6 +37,7 @@ function Portfolio() {
       title: project.title,
       description: project.description,
       technologies: project.technologies,
+      images: project.images
     };
     setDialogContent(content);
     setDialogOpen(true);
@@ -53,6 +54,7 @@ function Portfolio() {
         title={dialogContent.title}
         description={dialogContent.description}
         technologies={dialogContent.technologies}
+        images={dialogContent.images}
       ></Dialog>
       <div id="portfolio" className="text-white py-10 md:py-16">
         <TextStroke Title={"Projects"} TitleHeading={"My Projects"} />
@@ -78,6 +80,7 @@ function Portfolio() {
               projectContent={project}
               name={project.title}
               // name={`project ${i + 1 + index * 3}`}
+              images={project.images}
               openDialog={openDialog}
             />
           ))}
