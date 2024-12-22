@@ -9,7 +9,7 @@ function Home() {
     <>
       <div
         id="home"
-        className="home-container relative h-[600px] sm:h-[95vh] xl:h-[100vh] !pb-[100px] !w-full"
+        className="home-container relative h-[100dvh] !pb-[100px] !w-full"
       >
         <Navbar />
         <div className="sm:pl-10 xl:pl-20">

@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={`navbar ${isSticky ? "navbar-scrolled" : ""} z-10`}>
+      <div className={`navbar ${isSticky ? "navbar-scrolled" : ""} z-10 `}>
         <div className="flex navbar-logo gap-2 ">
           {/* <FaConnectdevelop color="#009d66" size={"35px"} /> */}
           <AnchorLink href="#home">
@@ -36,10 +36,10 @@ const Navbar = () => {
             </h1>
           </AnchorLink>
         </div>
-        <div className="menu-icon" onClick={handleClick}>
+        <div className="menu-icon " onClick={handleClick}>
           {active ? <FaTimes color="white" /> : <FaBars color="white" />}
         </div>
-        <ul className={active ? "nav-menu active" : "nav-menu"}>
+        <ul className={active ? "nav-menu active border-t-[1px] border-[#7C7C7C]" : "nav-menu "}>
           {menuItems.map((item, index) => {
             return (
               <li key={index}>

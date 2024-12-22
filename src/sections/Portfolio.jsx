@@ -37,7 +37,8 @@ function Portfolio() {
       title: project.title,
       description: project.description,
       technologies: project.technologies,
-      images: project.images
+      images: project.images,
+      url: project.url
     };
     setDialogContent(content);
     setDialogOpen(true);
@@ -55,6 +56,7 @@ function Portfolio() {
         description={dialogContent.description}
         technologies={dialogContent.technologies}
         images={dialogContent.images}
+        url={dialogContent.url}
       ></Dialog>
       <div id="portfolio" className="text-white py-10 md:py-16">
         <TextStroke Title={"Projects"} TitleHeading={"My Projects"} />

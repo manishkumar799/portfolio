@@ -34,8 +34,8 @@
 }
 
 body {
-  background-color: #121212;
-  font-family: Poppins, sans-serif;
+  background-color: #171717;
+  font-family: Arial, Helvetica, sans-serif
 }
 .home-container {
   background-image: url("./assets/rrt1.jpg");
@@ -357,7 +357,7 @@ textarea:focus {
 .img-size {
   height: 200px;
   width:300px;
-  border: 2px solid #009d66;
+  border: 2px solid #7C7C7C;
 }
 
 @media (min-width: 540px) {

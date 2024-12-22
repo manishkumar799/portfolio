@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Carousel from "./Carousel";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Dialog = ({
   isOpen,
@@ -9,8 +10,10 @@ const Dialog = ({
   description,
   technologies,
   images,
+  url
 }) => {
   // Prevent scrolling when the dialog is open
+  console.log(url)
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
@@ -53,7 +56,16 @@ const Dialog = ({
               /> */}
               <Carousel images={images} />
               <div className="">
-                <h2 className="text-2xl font-semibold">{title}</h2>
+                <div className="flex gap-2 items-center">
+                  <a href={url} target="_blank">
+
+                  <h2 className="text-2xl font-semibold text-[#009d66]">{title}</h2>
+                  </a>
+                  <a href={url} target="_blank">
+
+                  <FaExternalLinkAlt color="#009d66" />
+                  </a>
+                </div>
                 <div className="overflow-y-scroll h-[300px]">
                   <p className="mt-2">{description}</p>
                   <h4 className="mt-4 font-semibold">Technologies Used:</h4>
