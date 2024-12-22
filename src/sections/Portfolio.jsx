@@ -17,7 +17,7 @@ const PortfolioItem = ({ imgSrc, projectContent, name, openDialog,images }) => {
     >
       <div className="flex justify-center mt-4">
         <img
-          className={`img-size !object-cover custom-box-shadow ${isHovered ? "hovered" : ""}`}
+          className={`img-size !object-contain custom-box-shadow ${isHovered ? "hovered" : ""}`}
           src={imgSrc}
           alt=""
         />

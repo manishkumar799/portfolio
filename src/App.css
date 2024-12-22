@@ -34,7 +34,7 @@
 }
 
 body {
-  background-color: #171717;
+  background-color: #1e1e1e;
   font-family: Arial, Helvetica, sans-serif
 }
 .home-container {
@@ -355,32 +355,32 @@ textarea:focus {
 }
 
 .img-size {
-  height: 200px;
+  height: 150px;
   width:300px;
   border: 2px solid #7C7C7C;
 }
 
 @media (min-width: 540px) {
   .img-size {
-    height: 220px;
+    height: 190px;
     width: 366px;
   }
 }
 @media (min-width: 640px) {
   .img-size {
-    height: 200px;
+    height: 140px;
     width: 280px;
   }
 }
 @media (min-width: 765px) {
   .img-size {
-    height: 220px;
+    height: 170px;
     width: 340px;
   }
 }
 @media (min-width: 1280px) {
   .img-size {
-    height: 240px;
+    height: 180px;
     width: 360px !important;
   }
 }

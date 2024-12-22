@@ -25,10 +25,7 @@ Additional functionalities like package management, customizable return reasons,
     ],
     url: "https://returns.framemytv.com/",
     images: [
-      "https://lionsgate.brightspotcdn.com/1d/90/8fc75de5411e985f3a2def98358d/johnwick4-section-promo-double-home-03.jpg",
-      "https://wallpapercat.com/w/middle-retina/1/2/4/5822259-2920x1640-desktop-hd-cute-laptop-background-image.jpg",
-      "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
-      "https://png.pngtree.com/background/20230526/original/pngtree-beautiful-blue-in-high-peak-mountains-background-wallpaper-picture-image_2742502.jpg",
+      return_ranger
     ],
   },
   {
@@ -39,10 +36,7 @@ Additional functionalities like package management, customizable return reasons,
     technologies: ["Remix", "Shopify GraphQl API", "Nodejs"],
     url: "https://bombayhair.com/",
     images: [
-      "https://lionsgate.brightspotcdn.com/1d/90/8fc75de5411e985f3a2def98358d/johnwick4-section-promo-double-home-03.jpg",
-      "https://wallpapercat.com/w/middle-retina/1/2/4/5822259-2920x1640-desktop-hd-cute-laptop-background-image.jpg",
-      "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
-      "https://png.pngtree.com/background/20230526/original/pngtree-beautiful-blue-in-high-peak-mountains-background-wallpaper-picture-image_2742502.jpg",
+      bombay_hair
     ],
   },
   {
@@ -61,10 +55,7 @@ Additional functionalities like package management, customizable return reasons,
     ],
     url: "https://multipointinspect.com/",
     images: [
-      "https://lionsgate.brightspotcdn.com/1d/90/8fc75de5411e985f3a2def98358d/johnwick4-section-promo-double-home-03.jpg",
-      "https://wallpapercat.com/w/middle-retina/1/2/4/5822259-2920x1640-desktop-hd-cute-laptop-background-image.jpg",
-      "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
-      "https://png.pngtree.com/background/20230526/original/pngtree-beautiful-blue-in-high-peak-mountains-background-wallpaper-picture-image_2742502.jpg",
+      multipoint_inspect
     ],
   },
 
@@ -76,10 +67,7 @@ Additional functionalities like package management, customizable return reasons,
     technologies: ["PHP", "MySql"],
     url: "https://www.bekinderyou.com/",
     images: [
-      "https://lionsgate.brightspotcdn.com/1d/90/8fc75de5411e985f3a2def98358d/johnwick4-section-promo-double-home-03.jpg",
-      "https://wallpapercat.com/w/middle-retina/1/2/4/5822259-2920x1640-desktop-hd-cute-laptop-background-image.jpg",
-      "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
-      "https://png.pngtree.com/background/20230526/original/pngtree-beautiful-blue-in-high-peak-mountains-background-wallpaper-picture-image_2742502.jpg",
+      be_kinder_you
     ],
   },
   // {
